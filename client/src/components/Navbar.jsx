@@ -44,7 +44,7 @@ const Navbar = ({ setIsSidebarOpen }) => {
                     </button>
 
                     {/* User Button */}
-                    <img src={assets.profile_img_a} alt="User Avatar" className="size-7 rounded-full" />
+                    <UserButton afterSignOutUrl="/" />
                 </div>
             </div>
         </div>
