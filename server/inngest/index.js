@@ -16,7 +16,7 @@ const syncUserCreation = inngest.createFunction(
                 image: data?.image_url,
             },
         });
-        console.log("User created with ID:", data.id);
+        
     }
 );
 
@@ -29,7 +29,7 @@ const syncUserDeletion = inngest.createFunction(
                 id: data.id,
             },
         });
-        console.log("User deleted with ID:", data.id);
+        
     }
 );
 
@@ -47,7 +47,7 @@ const syncUserUpdate = inngest.createFunction(
                 image: data?.image_url,
             },
         });
-        console.log("User updated with ID:", data.id);
+        
     }
 );
 
