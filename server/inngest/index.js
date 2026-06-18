@@ -114,9 +114,17 @@ const syncWorkspaceMemberCreation = inngest.createFunction(
             data: {
                 userId: data.user_id,
                 workspaceId: data.organization_id,
-                role: data.role,
+                role: String(data.role_name).toUpperCase(),
             },
         });
     }
 );
-export const functions = [syncUserCreation, syncUserDeletion, syncUserUpdate, syncWorkspaceCreation, syncWorkspaceUpdate, syncWorkspaceDeletion, syncWorkspaceMemberCreation];
+export const functions = [
+    syncUserCreation,
+    syncUserDeletion,
+    syncUserUpdate,
+    syncWorkspaceCreation,
+    syncWorkspaceUpdate,
+    syncWorkspaceDeletion,
+    syncWorkspaceMemberCreation
+];
